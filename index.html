@@ -7,6 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '832767357702650');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=832767357702650&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -58,15 +75,11 @@
             align-items: center;
             justify-content: center;
         }
-        .sk-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
-            letter-spacing: -0.5px;
+        .sk-logo img {
+            height: 28px;
+            width: auto;
+            display: block;
         }
-        .sk-logo span { color: var(--sk-red); }
 
         /* ─── BREADCRUMB ─── */
         .breadcrumb {
@@ -489,7 +502,7 @@
     <!-- ─── MINIMAL HEADER ─── -->
     <header class="site-header">
         <div class="header-inner">
-            <span class="sk-logo">She<span>Knows</span></span>
+            <span class="sk-logo"><img src="https://www.sheknows.com/wp-content/themes/vip/pmc-sheknows-2020/assets/build/svg/brand-logo.svg" alt="SheKnows"></span>
         </div>
     </header>
 
@@ -525,6 +538,7 @@
 
     <!-- ─── ARTICLE BODY ─── -->
     <article class="article-body">
+        <p class="affiliate-disclosure" style="background:var(--bg-light);padding:12px 16px;border-radius:4px;border-bottom:none;margin-bottom:16px;">This article originally appeared on <a href="https://www.sheknows.com/health-and-wellness/articles/1234971852/hello-nancy-lem-review-buy-online/" target="_blank" rel="noopener" style="color:var(--sk-red);font-style:normal;font-weight:600;">SheKnows.com</a>. Reproduced here for convenience.</p>
         <p class="affiliate-disclosure">If you purchase an independently reviewed product or service through a link on our website, SheKnows may receive an affiliate commission.</p>
 
         <p><a href="https://hellonancy.com/products/lem" target="_blank">Nancy&rsquo;s Lem clitoral massager</a> is one of the best suction toys on the market, full stop. But before we get into the details of this review, let me give you some background.</p>
@@ -670,7 +684,7 @@
 
     <!-- ─── MINIMAL FOOTER ─── -->
     <footer class="site-footer">
-        <span class="sk-logo" style="font-size: 18px;">She<span style="color: var(--sk-red);">Knows</span></span>
+        <span class="sk-logo" style="display:inline-block;"><img src="https://www.sheknows.com/wp-content/themes/vip/pmc-sheknows-2020/assets/build/svg/brand-logo.svg" alt="SheKnows" style="height:20px;"></span>
         <br>
         <span>&copy; 2026 SheMedia, LLC. All Rights Reserved.</span>
     </footer>
