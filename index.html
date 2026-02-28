@@ -6,34 +6,40 @@
     <title>Shoppers Say This Whisper-Quiet Suction Toy "Outperforms Any Man" — So I Tried It, and…Wow | SheKnows</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --sk-red: #d42f2f;
-            --sk-red-hover: #b82525;
-            --text-primary: #1a1a1a;
-            --text-secondary: #555;
-            --text-light: #888;
+            /* ── SheKnows exact brand tokens ── */
+            --sk-red: #a9131e;
+            --sk-red-hover: #dd5757;
+            --sk-red-light: rgba(169, 19, 30, 0.12);
+            --text-primary: #000;
+            --text-secondary: #444;
+            --text-light: #777;
+            --bg-body: #fff8f1;
             --bg-white: #ffffff;
-            --bg-light: #fafafa;
-            --bg-product: #f7f4f0;
-            --border: #e5e5e5;
-            --border-light: #f0f0f0;
+            --bg-light: #faf7f4;
+            --bg-product: #f5f0eb;
+            --border: #e5e0da;
+            --border-light: #eee8e2;
             --content-width: 680px;
             --green-check: #2d8a4e;
             --orange-con: #c75b12;
         }
 
-        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
         body {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             color: var(--text-primary);
-            background: var(--bg-white);
-            line-height: 1.75;
+            background: var(--bg-body);
+            line-height: 1.5;
             font-size: 18px;
+        }
+        @media (max-width: 600px) {
+            body { font-size: 15px; }
         }
 
         /* ─── HEADER ─── */
@@ -67,19 +73,17 @@
             max-width: var(--content-width);
             margin: 0 auto;
             padding: 20px 24px 0;
-            font-size: 12px;
-            font-weight: 600;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
+            letter-spacing: 2.75px;
             color: var(--sk-red);
-        }
-        .breadcrumb a {
-            color: var(--sk-red);
-            text-decoration: none;
         }
         .breadcrumb .sep {
-            margin: 0 6px;
+            margin: 0 8px;
             color: var(--text-light);
+            font-weight: 400;
         }
 
         /* ─── ARTICLE HEADER ─── */
@@ -90,15 +94,15 @@
         }
         .article-title {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 38px;
+            font-size: 2.625rem;
             font-weight: 700;
-            line-height: 1.2;
+            line-height: 1.15;
             color: var(--text-primary);
             margin-bottom: 20px;
             letter-spacing: -0.3px;
         }
         @media (max-width: 600px) {
-            .article-title { font-size: 28px; }
+            .article-title { font-size: 1.75rem; line-height: 1.2; }
         }
 
         /* ─── BYLINE ─── */
@@ -125,8 +129,8 @@
             flex-shrink: 0;
         }
         .byline-text { font-size: 14px; line-height: 1.4; }
-        .byline-author { font-weight: 600; color: var(--text-primary); }
-        .byline-date { color: var(--text-light); }
+        .byline-author { font-weight: 700; color: var(--text-primary); }
+        .byline-date { color: var(--text-light); font-size: 13px; }
 
         /* ─── HERO IMAGE ─── */
         .hero-image-wrap {
@@ -138,7 +142,7 @@
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 4px;
+            border-radius: 2px;
         }
         .hero-credit {
             max-width: var(--content-width);
@@ -166,27 +170,39 @@
         }
         .article-body p {
             margin-bottom: 20px;
-            font-size: 18px;
-            line-height: 1.75;
+            line-height: 1.5;
             color: var(--text-primary);
         }
         .article-body h2 {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 28px;
+            font-size: 2.4375rem;
             font-weight: 700;
             margin: 40px 0 16px;
-            line-height: 1.25;
+            line-height: 1.15;
             color: var(--text-primary);
         }
+        @media (max-width: 600px) {
+            .article-body h2 { font-size: 1.6rem; }
+        }
         .article-body h3 {
-            font-family: 'Source Sans 3', sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 18px;
             font-weight: 700;
             margin: 28px 0 10px;
             color: var(--text-primary);
         }
-        .article-body strong { font-weight: 600; }
+        .article-body strong { font-weight: 700; }
         .article-body em { font-style: italic; }
+
+        /* ─── LINKS — SheKnows style: color only, no underline ─── */
+        .article-body a {
+            color: var(--sk-red);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .article-body a:hover {
+            color: var(--sk-red-hover);
+        }
 
         /* ─── PRODUCT CARD ─── */
         .product-card {
@@ -209,20 +225,21 @@
             font-size: 22px;
             font-weight: 600;
             margin-bottom: 16px;
+            color: var(--text-primary);
         }
         .buy-now-btn {
             display: inline-block;
             background: var(--sk-red);
-            color: #fff;
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 16px;
+            color: #fff !important;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             padding: 14px 48px;
             border: none;
             border-radius: 4px;
-            text-decoration: none;
+            text-decoration: none !important;
             cursor: pointer;
             transition: background 0.2s ease, transform 0.15s ease;
         }
@@ -255,11 +272,11 @@
             .pros-cons { grid-template-columns: 1fr; }
         }
         .pros-cons h4 {
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 14px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             margin-bottom: 10px;
         }
         .pros h4 { color: var(--green-check); }
@@ -277,14 +294,14 @@
             color: var(--text-secondary);
         }
         .pros li::before {
-            content: "✓";
+            content: "\2713";
             position: absolute;
             left: 0;
             color: var(--green-check);
             font-weight: 700;
         }
         .cons li::before {
-            content: "✗";
+            content: "\2717";
             position: absolute;
             left: 0;
             color: var(--orange-con);
@@ -304,7 +321,10 @@
             margin-bottom: 8px;
             counter-increment: step-counter;
             font-size: 17px;
-            line-height: 1.65;
+            line-height: 1.5;
+        }
+        @media (max-width: 600px) {
+            .how-to-steps li { font-size: 15px; }
         }
         .how-to-steps li::before {
             content: counter(step-counter);
@@ -316,13 +336,13 @@
             border-radius: 50%;
             background: var(--sk-red);
             color: #fff;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .how-to-steps li strong { font-weight: 600; }
+        .how-to-steps li strong { font-weight: 700; }
 
         /* ─── BLOCKQUOTES (User Reviews) ─── */
         .user-reviews {
@@ -335,16 +355,19 @@
             margin-bottom: 16px;
             border-radius: 0 6px 6px 0;
             font-size: 16px;
-            line-height: 1.65;
+            line-height: 1.55;
             color: var(--text-secondary);
             font-style: italic;
         }
+        @media (max-width: 600px) {
+            .user-review { font-size: 14px; padding: 16px 18px; }
+        }
         .user-review::before {
-            content: """;
+            content: "\201C";
             font-family: 'Playfair Display', serif;
             font-size: 48px;
             color: var(--sk-red);
-            opacity: 0.3;
+            opacity: 0.25;
             line-height: 0;
             display: block;
             margin-bottom: 8px;
@@ -353,7 +376,7 @@
 
         /* ─── VERDICT BOX ─── */
         .verdict-box {
-            background: linear-gradient(135deg, #fdf6f0 0%, #fef9f5 100%);
+            background: linear-gradient(135deg, #fef6ef 0%, #fffaf6 100%);
             border: 2px solid var(--sk-red);
             border-radius: 8px;
             padding: 32px;
@@ -364,15 +387,16 @@
             font-family: 'Playfair Display', Georgia, serif;
             color: var(--sk-red);
             margin: 0 0 16px !important;
+            font-size: 1.8rem !important;
         }
         .verdict-box p {
-            font-size: 17px;
+            font-size: 16px;
             color: var(--text-secondary);
             margin-bottom: 20px;
         }
         .verdict-box .promo-code {
             display: inline-block;
-            background: #fff;
+            background: var(--bg-white);
             border: 2px dashed var(--sk-red);
             padding: 8px 20px;
             border-radius: 6px;
@@ -390,7 +414,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(255,255,255,0.97);
+            background: rgba(255, 248, 241, 0.97);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-top: 1px solid var(--border);
@@ -403,7 +427,7 @@
             width: 100%;
             max-width: 400px;
             padding: 14px 24px;
-            font-size: 15px;
+            font-size: 13px;
         }
         .sticky-cta-price {
             font-size: 13px;
@@ -428,10 +452,6 @@
             color: var(--text-light);
             margin-top: 60px;
         }
-        .site-footer a {
-            color: var(--text-light);
-            text-decoration: none;
-        }
 
         /* ─── INLINE CTA ─── */
         .inline-cta {
@@ -439,24 +459,15 @@
             margin: 32px 0;
         }
 
-        /* ─── MISC ─── */
-        .article-body a {
-            color: var(--sk-red);
-            text-decoration: underline;
-            text-decoration-color: rgba(212, 47, 47, 0.3);
-            text-underline-offset: 2px;
-            transition: text-decoration-color 0.2s;
-        }
-        .article-body a:hover {
-            text-decoration-color: var(--sk-red);
-        }
+        /* ─── PRO TIP ─── */
         .pro-tip {
             background: #f0f7f3;
             border-radius: 6px;
             padding: 16px 20px;
             margin: 16px 0;
-            font-size: 16px;
+            font-size: 15px;
             color: var(--text-secondary);
+            line-height: 1.5;
         }
         .pro-tip strong { color: var(--green-check); }
 
@@ -485,7 +496,7 @@
     <!-- ─── BREADCRUMB ─── -->
     <nav class="breadcrumb">
         <span>Health & Wellness</span>
-        <span class="sep">›</span>
+        <span class="sep">&rsaquo;</span>
         <span>Love & Sex</span>
     </nav>
 
@@ -646,8 +657,8 @@
 
     <!-- ─── STICKY MOBILE CTA ─── -->
     <div class="sticky-cta" id="stickyCta">
-        <div class="sticky-cta-price"><span class="original" style="text-decoration:line-through;color:#999;font-size:12px;">$159</span> <strong>$66.75</strong> with code LEM25</div>
-        <a href="https://hellonancy.com/products/lem" target="_blank" class="buy-now-btn">Buy Now &mdash; 30-Day Guarantee</a>
+        <div class="sticky-cta-price"><span style="text-decoration:line-through;color:#999;font-size:12px;">$159</span> <strong>$66.75</strong> with code LEM25</div>
+        <a href="https://hellonancy.com/products/lem" target="_blank" class="buy-now-btn">Buy Now &mdash; Risk Free</a>
     </div>
 
     <script>
